@@ -1,0 +1,521 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif; 
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.banner{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(potentialbg.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    height: 1400px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding: 10px 15px;
+}
+.navbar ul li ul.dropdown li{
+    display: block;
+    font-size: 12px;
+    height: 39px;
+}
+.navbar ul li:hover ul.dropdown{
+    display: block;
+}
+.navbar ul li ul.dropdown{
+    width: 100%;
+    height: 130px;
+    background: #585858;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    color: #fff;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    top: 25%;
+    transform: translateY(-50);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 80px;
+}
+.content p{
+    height: 100vh;
+    font-size: 22px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    transform: translateY(0, -50%);
+    display: block;
+
+
+}
+
+.content2{
+    width: 100%;
+    top: 25%;
+    transform: translateY(-50);
+    text-align: center;
+    color: #fff;
+}
+.content2 h1{
+    font-size: 60px;
+    margin-top: 80px;
+    color:#fff;
+
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.content3{
+    width: 100%;
+    transform: translateY(-50);
+    text-align: left;
+    color: #fff;
+    white-space: normal;
+
+}
+.content3 h1{
+    width: 100%;
+    top: 3%;
+    transform: translateY(-50);
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+}
+.content3 p{
+    font-size: 15px;
+    text-align: left;
+    display: block;
+}
+.content4{
+    width: 100%;
+    transform: translateY(-50);
+    text-align: left;
+    color: #fff;
+    white-space: normal;
+
+
+}
+.banner2{
+    width: 100%;
+    height: 2000px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bgsolar.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    height: 2400px;
+}
+.content4 h1{
+    width: 100%;
+    top: 3%;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 3%;
+    min-height: 50px;
+}
+#mainHead {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 50px;
+    color: #fff;
+    text-align: center;
+    padding-left: 7%;
+}
+#main-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+#left-div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+
+}
+#sidebar-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+#sidebar-div p{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 7%; 
+}
+#right-div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 55%;
+}
+#headerBanner-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+#headerBanner-div p{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    padding-right: 7%;
+}
+#bodyArea-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 7%;
+}
+.responsive{
+    max-width: 75%;
+    height: auto;
+}
+.responsive{
+    max-width: 75%;
+    height: auto;
+}
+#bodyArea-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 390px;
+    justify-content: center;
+    align-items: center;
+}
+#footer-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#footer-div p{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 10px;
+
+}
+.banner3{
+    width: 100%;
+    height: 1900px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.content5 h1{
+    width: 100%;
+    top: 3%;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 3%;
+    min-height: 50px;
+}
+#wrapperWind{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+    margin: auto;
+
+}
+#logoWind{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+}
+#logoWind h1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+    align-items: center;
+    padding-left: 7%;
+    color: #fff;
+    margin-top: 10px;
+}
+#navWind{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 20px;
+    margin-top: 10px;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+#navWind p{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 20px;
+    margin-top: 10px;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+#headerBannerWind{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100px;
+    margin-top: 10px;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+#headerBannerWind p{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 20px;
+    margin-top: 10px;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+#mainWind{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 400px;
+    padding-left: 7%;
+    padding-right: 1%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+#sidebarWind{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin-top: 10px;
+}
+#bodyWind{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 45%;
+    margin-top: 10px;
+
+}
+#sidebarWind p{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    font-size: 20px;
+    color: #fff;
+}
+.content6 h1{
+    width: 100%;
+    top: 3%;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 3%;
+    min-height: 50px;
+}
+#wrapperGeo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+    margin: auto;
+
+}
+#logoGeo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+}
+#logoGeo h1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 35px;
+    align-items: center;
+    padding-left: 7%;
+    color: #fff;
+    margin-top: 10px;
+}
+#navGeo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 20px;
+    margin-top: 10px;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+#navGeo p{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 20px;
+    margin-top: 10px;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+#headerBannerGeo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100px;
+    margin-top: 10px;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+#headerBannerGeo p{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 20px;
+    margin-top: 10px;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+#mainGeo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 400px;
+    padding-left: 7%;
+    padding-right: 1%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+#sidebarGeo{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin-top: 10px;
+}
+#bodyGeo{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 45%;
+    margin-top: 10px;
+
+}
+#sidebarGeo p{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    font-size: 20px;
+    color: #fff;
+}
+#footerGeo{
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+}
+.banner4{
+    width: 100%;
+    height: 1700px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(geothermalbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.content3 h1{
+    width: 100%;
+    top: 3%;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 3%;
+    min-height: 50px;
+}
+.content3 a{
+    color: #fff;
+    width: 100%;
+    min-height: 20px;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
